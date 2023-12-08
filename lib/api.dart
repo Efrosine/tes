@@ -43,21 +43,6 @@ class ApiSerrvice {
       var list = HotelsModel.fromJson(element['property']);
       listHot.add(list);
     });
-    listHot.forEach(
-      (element) {
-        print('=====================');
-        print(element.name);
-        print(element.id);
-        print(element.address);
-        print(element.description);
-        print(element.image);
-        print(element.price?['currency']);
-        print(element.price?['value']);
-        print(element.rating);
-        print(element.stars);
-      },
-    );
-    print(dataHotels.runtimeType);
 
     return listHot;
   }
